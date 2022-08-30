@@ -1,0 +1,40 @@
+Transforming to Groovy:
+- Why Groovy?
+- Pros and cons
+
+- Resources:
+    - https://github.com/virtualdogbert/Groovy_Links
+    - https://bluesage.atlassian.net/wiki/spaces/DEV/pages/3316219907/Groovy+Guidelines
+
+- Documentation:
+  - https://groovy-lang.org/documentation.html
+  - https://groovy-lang.org/single-page-documentation.html
+
+- GDK:
+  - https://groovy-lang.org/gdk.html
+
+- Basic Groovy and Simple OO:
+  - Groovy Truth
+  - Multiline strings
+  - Using List
+  - Multimethods
+  - Simple Classes
+  - Delegation
+  - Traits(https://www.youtube.com/watch?v=VdBkw9TU_u4)
+
+- Functional Style:
+  - Improved Reuse using Closures
+  - Execute Around Method
+
+- Groovyness:
+  - Special Operators
+  - Conciseness and Fluency
+  
+- General Operations:
+  - regex(add)
+  - compile static(add)
+  - Read a file
+  - List files
+  - Run a system command
+  - Write XML
+  - Template Engins
