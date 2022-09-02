@@ -10,3 +10,13 @@ public class UtilUser {
     System.out.println(util.totalNumbersGreaterThan(new int[] {1, 7, 8, 10, 23}, 8));
   }
 }
+
+
+
+public class UtilUser {
+  public static void main(String[] args) {
+    Util util = new Util();
+
+    System.out.println(util.totalNumbers(1, 7, 8, 10, 23));
+  }
+}

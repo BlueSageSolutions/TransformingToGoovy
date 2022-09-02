@@ -1,14 +1,19 @@
+//https://e.printstacktrace.blog/groovy-regular-expressions-the-definitive-guide/
+import  java.util.regex.Pattern
 
-//println ("Prefix is groovier and better when I use Postfix" ==~ /^Prefix.*Postfix$/)
-//println ("Prefix is groovier and better when I use Postfix" ==~ /^.*Postfix$/)
-//println ("Prefix is groovier and better when I use Postfix" ==~ /^Prefix.*$/)
+Pattern regex = ~/\./
+String withsDot = "this is a dot. and it's in the middle"
+String withoutsDot = "ther is no dotin the middle"
+println ((withsDot =~ regex).find())
+println ((withoutsDot =~ regex).find())
 
 String testHasPrePost = "Prefix*****Postfix"
 String testHasPre = "Prefix*****"
 String testHasPost = "*****Postfix"
 String testNotHasPrePost = "*****"
 
-String prepost = /^Prefix.*Postfix$/
+
+Pattern prepost = ~/^Prefix.*Postfix$/
 String post = /^.*Postfix$/
 String pre =  /^Prefix.*$/
 
@@ -37,7 +42,7 @@ println ''
 def input = testHasPost
 
 switch (input) {
-    case ~prepost:
+    case prepost:
         println "has pre and post"
         break
 
@@ -52,4 +57,3 @@ switch (input) {
     default:
         println "has none..."
 }
-

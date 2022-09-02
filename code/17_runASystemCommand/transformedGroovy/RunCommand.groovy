@@ -1,1 +1,1 @@
-println "svn help".execute().text
+println "ls -la".execute().text

@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class RunCommand {
   public static void main(String[] args) {
     try {
-      Process process = Runtime.getRuntime().exec("svn help");
+      Process process = Runtime.getRuntime().exec("ls -la /");
 
       BufferedReader reader = new BufferedReader(
           new InputStreamReader(process.getInputStream()));

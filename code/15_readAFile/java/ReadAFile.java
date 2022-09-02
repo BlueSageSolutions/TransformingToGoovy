@@ -1,5 +1,3 @@
-package com.agiledeveloper;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -7,7 +5,7 @@ import java.io.IOException;
 
 public class ReadAFile {
   public static void main(String[] args) {
-    System.out.println(readFromFile(args[0]));
+    System.out.println(readFromFile("/etc/hosts"));
   }
 
   private static String readFromFile(String filePath) {

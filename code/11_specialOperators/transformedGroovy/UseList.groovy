@@ -16,8 +16,10 @@ printFirstNames(people)
 printFirstNames([])
 
 
-
-
+Person person1  =  new Person()
+Person person2  =  new ("John", "Smith", 27)
+String displayName = person1.firstName ? person1.firstName : 'Anonymous'   
+displayName = person1.firstName ?: 'Anonymous'    
 
 // == is .equals from java
 // <=> is compareTo from java space-ship operator

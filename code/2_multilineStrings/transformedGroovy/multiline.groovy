@@ -1,8 +1,9 @@
-msg = """This is an important announcement sent
+String msg = """This is an important announcement sent
 to all employees on ${new Date()}
 there will be a fire alarm test on next Monday at 11AM.
 Please be advised that...
 """
+
 
 println msg.replaceAll("\n", " ")
 

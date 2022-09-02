@@ -17,16 +17,15 @@ println groceries*.toUpperCase().join(', ')
 
 
 //collect
-
 def list = [1,2,3]
 println("double ${list.collect{it *2}}")
 
 //inject
-
 def value = [1, 2, 3].inject('counting: ') { str, item -> str + item }
 println  value == "counting: 123"
  
 value = [1, 2, 3].inject(0) { count, item -> count + item }
+println value
 assert value == 6
 
 //times
@@ -34,9 +33,3 @@ def someIntValueInYourProgam = 5
 someIntValueInYourProgam.times{
     println it
 }
-
-//join
-def listString = "Banana Pinaple Apple Mango"
-def listlist= ["Banana", "Pinaple", "Apple", "Mango"]
-println listString.split(" ").join(", ")
-println listlist.join(",_")
